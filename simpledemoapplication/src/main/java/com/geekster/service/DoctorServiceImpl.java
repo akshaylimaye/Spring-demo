@@ -24,4 +24,8 @@ public class DoctorServiceImpl implements DoctorService {
         }
         return "doctor can't be saved";
     }
+
+    public String getDoctor(String doctorName) {
+        return doctorDao.getDoctors(doctorName);
+    }
 }
